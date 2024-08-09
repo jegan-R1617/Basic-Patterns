@@ -1,0 +1,24 @@
+Input: ‘N’ = 3
+
+Output: 
+* * *
+* * *
+* * *
+
+Code:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int length=sc.nextInt();
+        //how many line need to print it is determined by the outer for loop => means"row";
+        for(int row=1;row<=length;row++){
+            //At what pplace you to print is determined by the iner for loop;
+            for(int col=1;col<=length;col++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
